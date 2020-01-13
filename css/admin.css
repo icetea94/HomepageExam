@@ -1,0 +1,57 @@
+/* 관리자페이지 가로사이즈 및 가운데 정렬 */
+#admin_box{width: 800px; margin: 0 auto;}
+
+/* 회원관리/게시판 영역 제목 */
+#admin_box h3{ margin: 30px 0 10px 0;}
+
+/* 1. 회원관리 영역 */
+/* 영역의 위 아래 마진 */
+#member_list { margin: 10px 0 30px 0;}
+
+/* 표의 제목줄 배경, 아래 경계선 .. */
+#member_list li:nth-child(1) { font-weight: bold; border-top: solid 2px #dddddd; border-bottom: solid 2px #dddddd; background-color: #eeeeee;}
+
+/* 표의 각 줄마다의 패딩과 아래경계선 */
+#member_list li{ padding: 10px 0; border-bottom: solid 1px #dddddd;}
+
+/* 각 줄의 각 칸마다 가로사이즈 조절하기 위해 span요소를 inline-block요소로 변경 */
+#member_list span { display: inline-block; text-align: center;}
+
+/* 각 컬룸마다 가로 사이즈 지정 */
+#member_list .col1{ width: 80px;}
+#member_list .col2{ width: 100px;}
+#member_list .col3{ width: 80px;}
+#member_list .col4{ width: 80px;}
+#member_list .col5{ width: 80px;}
+#member_list .col6{ width: 170px;}
+#member_list .col7{ width: 70px;}
+#member_list .col8{ width: 70px;}
+
+/* 레벨/포인트 입력하는 input요소의 사이즈 */
+#member_list input { width: 40px; height: 20px; text-align: center;}
+
+/* 수정/삭제 버튼의 패딩 */
+#member_list button {padding: 3px 10px;}
+
+
+/* 2. 게시판 영역 */
+/* 영역의 위 아래 마진 */
+#board_list {margin: 10px 0 20px 0;}
+
+/* 각 줄마다 경계선과 패딩 및 span요소 inline-block으로 */
+#board_list li{padding: 10px 0; border-bottom: solid 1px #dddddd;}
+#board_list span{ display: inline-block; text-align: center;}
+
+/* 각 컬룸의 사이즈 */
+#board_list .col1{width: 50px;}
+#board_list .col2{width: 60px;}
+#board_list .col3{width: 80px;}
+#board_list .col4{width: 340px; text-align: left;}
+#board_list .col5{width: 120px;}
+#board_list .col6{width: 120px;}
+
+/* 표의 제목줄 영역의 위 아래 경계선 및 글씨 두껍게 */
+#board_list li.title{font-weight: bold; border-top: solid 2px #dddddd; border-bottom: solid 2px #dddddd; background-color: #eeeeee;}
+
+/* 선택된 글 삭제 버튼 마진과 패딩*/
+#board_list button{ margin: 20px 0 0 20px; padding: 5px 10px;}

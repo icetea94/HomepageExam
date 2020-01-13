@@ -1,0 +1,60 @@
+/* board폴더안의 모든 파일들의 스타일을 이 css 하나에 모두 작성 */
+
+/* 게시판 목록보기(board_list.php) 영역 가로 사으즈 및 가운데 정렬 */
+#board_box{ width: 800px; margin: 0 auto;}
+
+/* 제목영역 */
+#board_box h3{margin-top: 30px; padding: 10px; border-bottom: solid 2px #516e7f; font-size: 20px;}
+
+/* 목록보기 게시판 표형태 스타일 */
+/* 각 줄마다 아래 경계선 */
+#board_list li{padding: 10px 0; border-bottom: solid 1px #dddddd;}
+
+/* 각 col들의 가로사이즈 조절하려면 span요소를 inline-block으로 */
+#board_list span{display: inline-block; text-align: center;}
+
+/* 각 col들 사이즈 */
+#board_list .col1{ width: 80px;}
+#board_list .col2{ width: 330px; text-align: left;}
+#board_list .col3{ width: 100px;}
+#board_list .col4{ width: 40px;}
+#board_list .col5{ width: 180px;}
+#board_list .col6{ width: 40px;}
+
+/* 페이지 네이션 */
+#page_num { text-align: center; margin: 30px 0;}
+#page_num li{display: inline;}
+
+/* 버튼들영역 */
+#board_box .buttons{ text-align: right; margin: 20px 0 40px 0;}
+#board_box .buttons li{display: inline;}
+#board_box .buttons button{padding: 5px 10px; cursor: pointer;}
+/* ################################################################ */
+
+/* 글쓰기(board_form.php) */
+
+#board_form span{display: inline-block;}
+
+/* 라벨영역 */
+#board_form .col1{ width: 150px;}
+
+/* 각 줄마다 패딩과 아래경계선 */
+#board_form li{ padding: 12px; border-bottom: solid 1px #dddddd;}
+
+/* 입력요소들과 텍스트에어리어 요소의 가로세로사이즈 */
+#board_form input{ width: 500px; height: 25px;}
+#board_form textarea{ width: 500px; height: 150px;}
+
+/* textarea의 높이가 크기에 라벨이 아래쪽으로 배치됨 */
+#board_form #text_area{position: relative; height: 158px;}
+#board_form #text_area .col1{ position: absolute; top: 10px;}
+#board_form #text_area .col2{ position: absolute; left: 166px;}
+
+/* 완료버튼 input요소 */
+#board_box .buttons input{ padding: 5px 10px; cursor: pointer;}
+/* ############################################################### */
+
+
+#view_content li:nth-child(1) {padding: 15px; border-bottom: solid 1px #aaaaaa;}
+#view_content .col2 { float: right;}
+#view_content li:nth-child(2) { padding: 15px 15px 80px 15px; border-bottom: solid 1px #cccccc;}
